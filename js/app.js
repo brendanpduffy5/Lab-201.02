@@ -2,7 +2,7 @@
 
 let userName = prompt("Hello! What is your name?");
 
-let answer1 = prompt("Welcome to my site, " + userName + "!  Does Brendan live in Colorado?").toLowerCase();
+let answer1 = prompt("Welcome to my site, " + userName + "!  Do I live in Colorado?").toLowerCase();
 
 if (answer1 == "yes")
 //    console.log("Correct!");
@@ -21,7 +21,7 @@ else {
     alert("Please reply Yes or No.");
 }
 
-let answer2 = prompt("Did Brendan attend college in Maine?").toLowerCase();
+let answer2 = prompt("Did I attend college in Maine?").toLowerCase();
 if (answer2 == "no")
 //    console.log("Correct!");
     alert("Correct!");
@@ -39,7 +39,7 @@ else {
     alert("Please reply Yes or No.");
 }
 
-let answer3 = prompt("Is Brendan originally from New Hampshire?").toLowerCase();
+let answer3 = prompt("Am I originally from New Hampshire?").toLowerCase();
 if (answer3 == "no")
 //    console.log("Correct!");
     alert("Correct!");
@@ -58,7 +58,7 @@ else {
 }
 
 
-let answer4 = prompt("Does Brendan have four kids?").toLowerCase();
+let answer4 = prompt("Do I have four kids?").toLowerCase();
 if (answer4 == "yes")
 //    console.log("Correct!");
     alert("Correct!");
@@ -76,7 +76,7 @@ else {
     alert("Please reply Yes or No.");
 }
 
-let answer5 = prompt("Is Brendan\’s main goal to become a full stack software developer? ").toLowerCase();
+let answer5 = prompt("Is my main goal to become a full stack software developer? ").toLowerCase();
 if (answer5 == "yes")
 //    console.log("Correct!");
     alert("Correct!");
@@ -92,6 +92,33 @@ else if (answer5 == "n")
 else {
 //    console.log("Please reply Yes or No.")
     alert("Please reply Yes or No.");
+}
+
+
+
+for(let i = 0; i < 4; i++) {
+
+    let answer6 = prompt("How many dogs do you think I have?"); 
+        if(answer6 > 2){
+        alert("That's too high!  Try again...");
+    } else if(answer6 < 2) {
+        alert("That is too low.  Try again!");
+    } else{
+        alert("Yes! I have two dogs!")
+        break;
+    }
+}
+
+for(let i=1; i < 6; i++); {
+    let answer7 = prompt("What type of dogs do I have?").toLowerCase();
+    
+    if (answer7 == 'german shepherd dog' || 'german shepherd'){
+        alert ('Yes! I have one German Shepherd Dog named Charlie. He is so smart!');
+    } else if (answer7 == "siberian husky" || 'husky') {
+        alert('Yes! I have a Siberian Husky named Mia. She gets in a lot of trouble!');
+    } else {
+        alert("No.  Cool dog though.  Try again?");
+    }
 }
 
 alert("Thanks for stopping by, " + userName + "!  Please visit again!");
