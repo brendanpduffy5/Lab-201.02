@@ -1,0 +1,16 @@
+
+h1 {
+    color: white; background-color: rgb(38, 0, 255);
+    font-family: verdana;
+    font-size: 300%;
+}
+
+section {
+    color: black; 
+    border: 5px solid rgb(142, 140, 144);
+    background-color: rgb(214, 211, 211);
+    padding: 50px;
+    margin: 20px;
+    width: 500px;
+    height: 250px;
+}
